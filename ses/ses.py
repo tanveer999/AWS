@@ -9,10 +9,10 @@ This is a test mail.
 """
 
 ses.send_email(
-    Source  = 'tanveerahmed1811226@gmail.com',
+    Source  = '',
     Destination = {
         'ToAddresses': [
-            'tanveerahmed1811226@gmail.com'
+            ''
         ]
     },
     Message = {
