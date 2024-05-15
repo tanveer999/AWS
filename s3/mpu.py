@@ -35,7 +35,7 @@ class ProgressPercentage(object):
 if __name__ == '__main__':
     s3 = boto3.client('s3')
 
-    bucket_name = ''
+    bucket_name = os.getenv('AWS_DEPLOYMENT_S3')
     filepath = 'file.txt'
     bucket_key = f'mpu/{filepath}'
     mpu(bucket_name,filepath,bucket_key)
